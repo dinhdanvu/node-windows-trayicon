@@ -35,6 +35,8 @@ class WindowsTrayicon {
 			})
 		});
 	}
+	setTitle(title) {
+		this.__nativeTray.SetTitle(title);
 	exit() {
 		this.__nativeTray.Stop();
 	}
